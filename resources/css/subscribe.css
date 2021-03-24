@@ -56,6 +56,6 @@ form {
 }
 
 .subscribeButton:hover {
-  background-color: black;
-  color: white;
+  background-color: gray;
+  color: cyan;
 }

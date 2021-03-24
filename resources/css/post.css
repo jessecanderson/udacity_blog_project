@@ -22,13 +22,17 @@
   }
 }
 
+.heading {
+  color: cyan;
+}
+
 .subHeading {
   font-size: small;
 }
 
 .postBody {
   align-items: flex-start;
-  border: 1px solid yellow;
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
   grid-area: pt;

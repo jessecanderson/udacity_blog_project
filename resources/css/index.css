@@ -1,4 +1,19 @@
-/* Extra small devices (phones, 600px and down) */
+header {
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+p {
+  color: white;
+}
 
 .site {
   font-family: "Roboto Slab", serif;
@@ -11,6 +26,7 @@
 
 .sidebar {
   align-items: stretch;
+  color: cyan;
   flex-direction: column;
   grid-area: sidebar;
   justify-content: center;
@@ -43,7 +59,7 @@
 
 .hd {
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,7 +68,7 @@
 
 .ft {
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,17 +76,15 @@
 }
 
 .subButton {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 8px;
-  color: black;
   font-size: small;
   padding: 5px;
   text-decoration: none;
 }
 
 .subButton:hover {
-  background-color: black;
-  color: white;
+  color: cyan;
 }
 
 .title {
