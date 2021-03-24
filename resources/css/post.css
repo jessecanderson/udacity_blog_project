@@ -3,27 +3,21 @@
   font-family: "Roboto Slab", serif;
   grid-gap: 10px;
   grid-template-areas:
-    "hd hd hd hd hd hd"
-    "pt pt pt img img img"
-    "pt pt pt img img img"
-    "ft ft ft ft ft ft";
+    "pt img"
+    "pt img"
+    "sc sc";
 }
 
 @media only screen and (max-width: 600px) {
   .postPage {
+    align-items: center;
     display: grid;
     font-family: "Roboto Slab", serif;
     grid-gap: 10px;
     grid-template-areas:
-      "hd hd hd "
-      "pt pt pt "
-      "img img img"
-      "ft ft ft ";
+      "pt"
+      "img";
   }
-}
-
-.heading {
-  color: cyan;
 }
 
 .subHeading {
@@ -32,26 +26,84 @@
 
 .postBody {
   align-items: flex-start;
-  border: 1px solid gray;
-  display: flex;
-  flex-direction: column;
+  border-radius: 8px;
+  display: grid;
   grid-area: pt;
+  grid-template-areas:
+    "tlt"
+    "ab"
+    "pst";
+  margin: 10px;
   padding: 15px;
+}
+
+.postBody h1 {
+  grid-area: tlt;
+}
+
+.postBody h3 {
+  grid-area: tlt;
+}
+
+.authorInfo {
+  float: right;
+  grid-area: ab;
 }
 
 .post {
   align-items: center;
   display: flex;
   flex-direction: column;
+  grid-area: pst;
   padding: 20px;
+  text-align: left;
+}
+
+.post div {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post a {
+  margin: 8px;
+}
+
+.avatar {
+  align-items: flex-start;
+  background-image: url("../images/family.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  grid-area: ab;
+  height: 250px;
+  justify-content: left;
+}
+
+.postImageContainer {
+  display: grid;
+  grid-area: img;
+  grid-template-areas:
+    "im im"
+    "tx tx"
+    "sp sp";
+  width: 200px;
 }
 
 .postImage {
+  align-items: center;
   background-image: url("../images/pexels-nataliya-vaitkevich-4641833.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  grid-area: img;
+  grid-area: im;
   height: 200px;
   min-width: 150px;
+}
+
+.postImageCaption {
+  grid-area: tx;
+  text-align: center;
 }

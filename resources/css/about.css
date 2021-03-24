@@ -1,0 +1,43 @@
+.aboutMeInfo,
+.aboutText {
+  text-align: center;
+}
+
+.aboutBody {
+  display: grid;
+  grid-template-areas:
+    "ab ab img img"
+    "ab ab img img";
+  grid-gap: 10px;
+}
+
+.aboutMeInfo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  grid-area: ab;
+}
+
+.imageArea {
+  align-items: center;
+  display: grid;
+  grid-area: img;
+  grid-template-areas:
+    "im im"
+    "im im"
+    "txt txt";
+}
+
+.aboutImage {
+  background-image: url("../images/family.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: im;
+  height: 200px;
+  width: 200px;
+}
+
+.aboutText {
+  grid-area: txt;
+}

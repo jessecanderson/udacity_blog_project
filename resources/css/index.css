@@ -1,18 +1,12 @@
-header {
-  color: white;
+header,
+body,
+a,
+p {
+  color: #dfdce3;
 }
 
 body {
-  background-color: black;
-  color: white;
-}
-
-a {
-  color: white;
-}
-
-p {
-  color: white;
+  background-color: #4abdac;
 }
 
 .site {
@@ -26,7 +20,6 @@ p {
 
 .sidebar {
   align-items: stretch;
-  color: cyan;
   flex-direction: column;
   grid-area: sidebar;
   justify-content: center;
@@ -59,24 +52,33 @@ p {
 
 .hd {
   align-items: center;
-  border: 1px solid white;
+  border-radius: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
 }
 
-.ft {
+.navBar {
   align-items: center;
-  border: 1px solid white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 5px;
+}
+
+.navBar a {
+  border-radius: 8px;
+  font-size: small;
+  margin: 15px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  color: #fc4a1a;
 }
 
 .subButton {
-  border: 1px solid white;
   border-radius: 8px;
   font-size: small;
   padding: 5px;
@@ -84,7 +86,7 @@ p {
 }
 
 .subButton:hover {
-  color: cyan;
+  color: #fc4a1a;
 }
 
 .title {
@@ -105,7 +107,7 @@ p {
 }
 
 .postCard {
-  border: 1px solid black;
+  background-color: #f7b733;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -116,4 +118,22 @@ p {
 
 .postCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ft {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  grid-area: sc;
+}
+
+.socialIcons a {
+  margin: 5px;
 }
