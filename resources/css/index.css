@@ -1,0 +1,105 @@
+/* Extra small devices (phones, 600px and down) */
+
+.site {
+  font-family: "Roboto Slab", serif;
+  display: grid;
+  grid-template-areas:
+    "pt pt pt pt pt sidebar"
+    "pt pt pt pt pt sidebar";
+  grid-gap: 10px;
+}
+
+.sidebar {
+  align-items: stretch;
+  flex-direction: column;
+  grid-area: sidebar;
+  justify-content: center;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .site {
+    display: grid;
+    font-family: "Roboto Slab", serif;
+    grid-template-areas:
+      "sidebar sidebar sidebar"
+      "sidebar sidebar sidebar"
+      "pt pt pt "
+      "pt pt pt ";
+    grid-gap: 10px;
+  }
+
+  .sidebar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    grid-column: 1 / span 3;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+.hd {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.ft {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.subButton {
+  border: 1px solid black;
+  border-radius: 8px;
+  color: black;
+  font-size: small;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.subButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.textSmall {
+  font-size: x-small;
+}
+
+.pt {
+  align-items: center;
+  display: grid;
+  grid-area: pt;
+  grid-gap: 15px;
+  grid-template-columns: 50% 50%;
+  padding: 15px;
+}
+
+.postCard {
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  padding: 2px 16px;
+}
+
+.postCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,61 @@
+.subscribePage {
+  display: grid;
+  font-family: "Roboto Slab", serif;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "tl tl tl tl tl tl"
+    "pt pt pt pt pt pt"
+    "ft ft ft ft ft ft";
+}
+
+.formField {
+  align-items: flex-start;
+  grid-column: 2 / 3;
+}
+
+@media only screen and (max-width: 600px) {
+  .subscribePage {
+    display: grid;
+    font-family: "Roboto Slab", serif;
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd "
+      "tl tl "
+      "pt pt"
+      "ft ft ";
+  }
+
+  .formField {
+    grid-column: 1 / 2;
+  }
+}
+
+.subscribeHeader {
+  grid-area: tl;
+}
+
+form {
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: 200px 200px 1fr;
+}
+
+.subscribeBody {
+  grid-area: pt;
+}
+
+.formText {
+  grid-column: 1 / 2;
+}
+
+.subscribeButton {
+  border-radius: 8px;
+  grid-column: 1 / 2;
+  padding: 5px;
+}
+
+.subscribeButton:hover {
+  background-color: black;
+  color: white;
+}

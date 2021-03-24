@@ -1,0 +1,53 @@
+.postPage {
+  display: grid;
+  font-family: "Roboto Slab", serif;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "pt pt pt img img img"
+    "pt pt pt img img img"
+    "ft ft ft ft ft ft";
+}
+
+@media only screen and (max-width: 600px) {
+  .postPage {
+    display: grid;
+    font-family: "Roboto Slab", serif;
+    grid-gap: 10px;
+    grid-template-areas:
+      "hd hd hd "
+      "pt pt pt "
+      "img img img"
+      "ft ft ft ";
+  }
+}
+
+.subHeading {
+  font-size: small;
+}
+
+.postBody {
+  align-items: flex-start;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  grid-area: pt;
+  padding: 15px;
+}
+
+.post {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.postImage {
+  background-image: url("../images/pexels-nataliya-vaitkevich-4641833.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: img;
+  height: 200px;
+  min-width: 150px;
+}
