@@ -35,7 +35,7 @@
   grid-area: tl;
 }
 
-form {
+.subscribeForm {
   display: grid;
   grid-gap: 18px;
   grid-template-columns: 200px 200px 1fr;

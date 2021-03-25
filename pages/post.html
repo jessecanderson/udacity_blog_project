@@ -22,10 +22,10 @@
       <div class="hd">
         <h2 class="title">Demo Post</h2>
         <div class="navBar">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="search.html">Search</a>
-          <a href="subscribe.html" class="subButton">Subscribe</a>
+          <a href="../index.html" class="navLink">Home</a>
+          <a href="about.html" class="navLink">About</a>
+          <a href="search.html" class="navLink">Search</a>
+          <a href="subscribe.html" class="navLink">Subscribe</a>
         </div>
         <!-- <i class="material-icons iconConfig">search</i> -->
       </div>
@@ -33,36 +33,46 @@
     <section>
       <div class="postPage">
         <div class="postBody">
-          <div>
+          <div class="postHeading">
             <h1>A Blog Post</h1>
             <h3>Written By:</h3>
           </div>
           <div class="authorInfo">
-            <h3 class="subHeading">Jesse Anderson</h3>
-            <h3 class="subHeading">Mobile Developer<br />Udacity</h3>
+            <div class="subHeading">
+              <p>
+                Jesse Anderson<br /><b>Developer Wizard</b><br /><u>Udacity</u>
+              </p>
+            </div>
+            <figure class="fig">
+              <div class="avatar"></div>
+              <figcaption class="captionText">My family</figcaption>
+            </figure>
           </div>
+
           <article class="post">
             <p>
-              My Name is Jesse and I created this site. I'm a mobile developer
-              trying to figure out this whole "front end" thing.
+              My Name is Jesse and I created this site. I'm a self taught
+              developer trying to figure out this whole "front end" thing.
+              <br />
+              <br />
+              <i>
+                Everybody in this country should learn to program a computer
+                because it teaches you how to think.</i
+              >
+              ~Steve Jobs
             </p>
-            <div>
+            <div class="socialShare">
               <p>Share this post:</p>
-              <a href="www.facebook.com" class="fa fa-facebook"></a>
-              <a href="www.twitter.com" class="fa fa-twitter"></a>
+              <a href="www.facebook.com" class="fa fa-facebook iconLinks"></a>
+              <a href="www.twitter.com" class="fa fa-twitter iconLinks"></a>
             </div>
           </article>
-          <div class="avatar"></div>
         </div>
         <div class="postImageContainer">
-          <div class="postImage"></div>
-          <div class="postImageCaption">
-            <p>
-              I want to talk about Corgi's and how amazing they are.
-              <br /><br />
-            </p>
+          <figure>
+            <div class="postImage"></div>
             <figcaption>Corgies are my favorite dogs.</figcaption>
-          </div>
+          </figure>
         </div>
       </div>
     </section>
@@ -71,8 +81,8 @@
       <section class="socialIcons">
         <p>Find me on social Media</p>
         <div>
-          <a href="www.facebook.com" class="fa fa-facebook"></a>
-          <a href="www.twitter.com" class="fa fa-twitter"></a>
+          <a href="www.facebook.com" class="fa fa-facebook socialIconsLink"></a>
+          <a href="www.twitter.com" class="fa fa-twitter socialIconsLink"></a>
         </div>
       </section>
       <div class="ft">
